@@ -13,6 +13,7 @@ public protocol ScrollingPageControlDelegate: class {
 	func viewForDot(at index: Int) -> UIView?
 }
 
+@objcMembers
 open class ScrollingPageControl: UIView {
 	open weak var delegate: ScrollingPageControlDelegate? {
 		didSet {
